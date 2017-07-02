@@ -6,7 +6,10 @@ target 'MyApp' do
   use_frameworks!
 
   # Pods for MyApp
-  pod 'RealmSwift'
+  pod 'RealmSwift', '~> 2.8.3'
+  # Not needed for Realm but great for a login
+  pod 'Eureka', '~> 3.0.0'
+  
 
   target 'MyAppTests' do
     inherit! :search_paths
