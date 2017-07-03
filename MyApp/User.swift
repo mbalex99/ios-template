@@ -13,6 +13,10 @@ class User: Object {
     dynamic var _id: String = SyncUser.current?.identity ?? ""
     dynamic var username: String = ""
     dynamic var name: String = ""
+    
+    override static func primaryKey() -> String? {
+        return "_id"
+    }
 
     static var globalUsersRealm: Realm {
         let syncConfig =

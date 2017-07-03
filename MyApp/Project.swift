@@ -16,4 +16,8 @@ class Project: Object {
     
     let items = List<Item>()
     
+    override static func primaryKey() -> String? {
+        return "_id"
+    }
+    
 }

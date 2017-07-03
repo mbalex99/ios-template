@@ -14,4 +14,8 @@ class Item: Object {
     dynamic var title: String = ""
     dynamic var isDone: Bool = false
     dynamic var timestamp: NSDate = NSDate()
+    
+    override static func primaryKey() -> String? {
+        return "_id"
+    }
 }
