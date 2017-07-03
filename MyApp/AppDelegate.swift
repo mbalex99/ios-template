@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-        let firstViewController = SyncUser.current == nil ? LoginViewController(): ItemsListViewController()
+        let firstViewController = SyncUser.current == nil ? LoginViewController(): ProjectsListViewController()
         window?.rootViewController = UINavigationController(rootViewController: firstViewController)
         return true
     }

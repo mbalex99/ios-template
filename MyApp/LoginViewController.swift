@@ -61,7 +61,7 @@ class LoginViewController: FormViewController {
         let authUrl = UserDefaults.standard.rosUrl ?? "http://localhost:9080"
         
         let confirmButton = form.rowBy(tag: LoginViewController.CONFIRM)
-        confirmButton?.title = "One Moment"
+        confirmButton?.title = "One Moment..."
         confirmButton?.disabled = Condition(booleanLiteral: true)
         confirmButton?.reload()
         
@@ -72,7 +72,7 @@ class LoginViewController: FormViewController {
             if let user = user {
                 // we have a user! let's go to the main view controller
                 self?.registerUser(syncUser: user, username: username)
-                self?.navigationController?.setViewControllers([ItemsListViewController()], animated: true)
+                self?.navigationController?.setViewControllers([ProjectsListViewController()], animated: true)
             }else if let authError = error as? SyncAuthError, authError.code == .userDoesNotExist {
                 self?.attemptRegister(username: username, password: password)
             }
@@ -90,7 +90,7 @@ class LoginViewController: FormViewController {
     func attemptRegister(username: String, password: String){
         let authUrl = UserDefaults.standard.authUrl ?? "http://localhost:9080"
         
-        form.rowBy(tag: LoginViewController.CONFIRM)?.title = "Registering... One Moment."
+        form.rowBy(tag: LoginViewController.CONFIRM)?.title = "Registering... One Moment..."
         form.rowBy(tag: LoginViewController.CONFIRM)?.disabled = Condition(booleanLiteral: true)
         
         let registerCreds = SyncCredentials.usernamePassword(username: username, password: password, register: true)
@@ -105,7 +105,7 @@ class LoginViewController: FormViewController {
             }
             if let user = user {
                 self?.registerUser(syncUser: user, username: username)
-                self?.navigationController?.setViewControllers([ItemsListViewController()], animated: true)
+                self?.navigationController?.setViewControllers([ProjectsListViewController()], animated: true)
             }
         }
     }

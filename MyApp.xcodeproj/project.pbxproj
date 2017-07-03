@@ -17,9 +17,10 @@
 		E34B0DE31EF2520C0025ABAF /* MyAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34B0DE21EF2520C0025ABAF /* MyAppUITests.swift */; };
 		E37BEB321F08194D0045E9DD /* UserDefaults+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37BEB311F08194D0045E9DD /* UserDefaults+Extensions.swift */; };
 		E37BEB361F08199B0045E9DD /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37BEB351F08199B0045E9DD /* Item.swift */; };
-		E37BEB391F083F140045E9DD /* ItemsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37BEB381F083F140045E9DD /* ItemsListViewController.swift */; };
+		E37BEB391F083F140045E9DD /* ProjectsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37BEB381F083F140045E9DD /* ProjectsListViewController.swift */; };
 		E37BEB3B1F0865A80045E9DD /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37BEB3A1F0865A80045E9DD /* Project.swift */; };
 		E37BEB3D1F0865D80045E9DD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37BEB3C1F0865D80045E9DD /* User.swift */; };
+		E37BEB3F1F09E7930045E9DD /* ProjectItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37BEB3E1F09E7930045E9DD /* ProjectItemsViewController.swift */; };
 		E685B699ED0345276B241C76 /* Pods_MyAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C8166B9AC485B92E74FBFFC /* Pods_MyAppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,9 +65,10 @@
 		E34B0DE41EF2520C0025ABAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E37BEB311F08194D0045E9DD /* UserDefaults+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extensions.swift"; sourceTree = "<group>"; };
 		E37BEB351F08199B0045E9DD /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
-		E37BEB381F083F140045E9DD /* ItemsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsListViewController.swift; sourceTree = "<group>"; };
+		E37BEB381F083F140045E9DD /* ProjectsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsListViewController.swift; sourceTree = "<group>"; };
 		E37BEB3A1F0865A80045E9DD /* Project.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		E37BEB3C1F0865D80045E9DD /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E37BEB3E1F09E7930045E9DD /* ProjectItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectItemsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,7 +190,8 @@
 			isa = PBXGroup;
 			children = (
 				E34B0DC41EF2520C0025ABAF /* LoginViewController.swift */,
-				E37BEB381F083F140045E9DD /* ItemsListViewController.swift */,
+				E37BEB381F083F140045E9DD /* ProjectsListViewController.swift */,
+				E37BEB3E1F09E7930045E9DD /* ProjectItemsViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -483,10 +486,11 @@
 			files = (
 				E37BEB361F08199B0045E9DD /* Item.swift in Sources */,
 				E34B0DC51EF2520C0025ABAF /* LoginViewController.swift in Sources */,
-				E37BEB391F083F140045E9DD /* ItemsListViewController.swift in Sources */,
+				E37BEB391F083F140045E9DD /* ProjectsListViewController.swift in Sources */,
 				E37BEB321F08194D0045E9DD /* UserDefaults+Extensions.swift in Sources */,
 				E34B0DC31EF2520C0025ABAF /* AppDelegate.swift in Sources */,
 				E37BEB3B1F0865A80045E9DD /* Project.swift in Sources */,
+				E37BEB3F1F09E7930045E9DD /* ProjectItemsViewController.swift in Sources */,
 				E37BEB3D1F0865D80045E9DD /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

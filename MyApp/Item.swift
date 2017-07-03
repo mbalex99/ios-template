@@ -11,7 +11,8 @@ import RealmSwift
 
 class Item: Object {
     dynamic var _id: String = UUID().uuidString
-    dynamic var title: String = ""
+    dynamic var name: String = ""
+    dynamic var body: String = ""
     dynamic var isDone: Bool = false
     dynamic var timestamp: NSDate = NSDate()
     
